@@ -53,7 +53,7 @@ section.main::after{
     display: grid;
     grid-template-rows:repeat(2,1fr) ;
     gap: 40px;
-    width: 1064px;
+    max-width: 1064px;
     position: relative;
     z-index: 1;
 }
@@ -138,14 +138,10 @@ section.main::after{
     font-size: var(--m-font-size);
     line-height: 1.6;
 }
-.attribution{
-    font-size: 11px;
-    text-align: center;
-    margin-bottom: 10px;
-    z-index: 1;
-}
-@media(max-width:375px){
+
+@media(max-width:675px){
     .container{
+        padding: 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
